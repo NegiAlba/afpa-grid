@@ -1,0 +1,16 @@
+.basic-grid{
+    display:grid;
+    gap: 1rem;
+
+    /* 1 : longue */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+
+    /* 2 : plus propre */
+    /* grid-template-columns: repeat(6, 1fr); */
+
+    /* 3 : taille correcte, mais ça dépasse */
+    /* grid-template-columns: repeat(6, minmax(240px, 1fr)); */
+
+    /* 4 : Meilleure solution implicite */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
